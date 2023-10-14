@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .centered-content {
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem; /* Adjust as needed */
+        margin-left: auto;     /* Centers blockquote for left-right if a max-width is set */
+        margin-right: auto;    /* Centers blockquote for left-right if a max-width is set */
+        max-width: 70%;        /* Optional: Set a maximum width if desired */
+        
+    }
+    .centered-content blockquote {
+    margin-top: 5rem;    /* Adjust as needed */
+    margin-bottom: 5rem; /* Adjust as needed */
+    margin-left: auto;     /* Centers blockquote for left-right if a max-width is set */
+    margin-right: auto;    /* Centers blockquote for left-right if a max-width is set */
+    max-width: 70%;        /* Optional: Set a maximum width if desired */
+    }
+
+</style>
+
+<div class="centered-content">
+    <!-- CEO Image -->
+    <img src="https://media.licdn.com/dms/image/C5603AQELJdeNIQtl3Q/profile-displayphoto-shrink_800_800/0/1542153743923?e=2147483647&v=beta&t=RVv95dfGogDEbH-6Qhfli5lxxzwPd99NW-blKPZipLU" alt="CEO of Hooli Corp">
+
+    <!-- CEO Quote -->
+    <blockquote>
+        “Hooli isn’t just another high tech company. Hooli isn’t just about software. Hooli. Hooli is about people. Hooli is about 
+        innovative technology that makes a difference, transforming the world as we know it. Making the world a better place, through 
+        minimal message oriented transport layers. I firmly believe we can only achieve greatness if first we achieve goodness.” 
+        <br><cite>-Gavin Belson, CEO of Hooli</cite>
+    </blockquote>
+    <p>
+        Here at Hooli, we are a firm believer that anyone can become a Hooligan. Literally. No interview required. You hire yourself. Simlpy 
+        head over to the employee directory and click on add employee provide your name and desired job title. That's it! You're hired! Similarly,
+        if you feel one of your fellow Hooligans is not living up to the values of our amazing company, you can fire them. Just click delete and they are gone.
+        If you feel they need a change of job role, simply edit their employee profile. At Hooli, we believe everyone's voice and opinion counts which is why we a 
+        true employee democracy for our HR department!
+    </p>
+
+</div>
+
+{% endblock %}

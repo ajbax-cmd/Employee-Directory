@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .centered-content {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .company-details {
+        margin-top: 2rem;
+    }
+
+    .company-details dl {
+        display: grid;
+        grid-template-columns: max-content auto;
+        gap: 0.5rem 1rem;
+    }
+
+    .company-details dt {
+        font-weight: bold;
+    }
+</style>
+
+
+
+    <!-- Company Details -->
+    <div class="company-details">
+        <dl>
+            <dt>Industry</dt>
+            <dd>Software Development</dd>
+
+            <dt>Company size</dt>
+            <dd>10,001+ employees</dd>
+
+            <dt>Headquarters</dt>
+            <dd>Silicon Valley, CA</dd>
+
+            <dt>Type</dt>
+            <dd>Public Company</dd>
+
+            <dt>Founded</dt>
+            <dd>1997</dd>
+
+            <dt>Specialties</dt>
+            <dd>Targeted search, cross platform verticals, reverse engineering</dd>
+
+            <dt>Locations</dt>
+            <dd>Primary<br>2441 Sand Hill Road,<br>Silicon Valley, CA, US</dd>
+        </dl>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add Employee</h2>
+
+<form method="post" enctype="multipart/form-data"> <!-- enctype is important for file uploads! -->
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Add Employee">
+</form>
+{% endblock %}
+

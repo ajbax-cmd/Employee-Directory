@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Confirm Deletion</h2>
+<p>Are you sure you want to delete the following employee?</p>
+
+<p><strong>Name:</strong> {{ employee.name }}</p>
+<p><strong>ID:</strong> {{ employee.employee_id }}</p>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Confirm Delete">
+</form>
+<a href="{% url 'employee_directory' %}">Cancel</a>
+
+{% endblock %}

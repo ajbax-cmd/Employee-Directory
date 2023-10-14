@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Employee Directory</h2>
+<form method="get">
+    <!-- Sorting -->
+    <select name="sort_by">
+        <option value="employee_id">Sort by ID</option>
+        <option value="name">Sort by Name</option>
+    </select>
+
+    <!-- Searching -->
+    <input type="text" name="search" placeholder="Search by name or ID...">
+    <input type="submit" value="Apply">
+</form>
+<!-- Single "Add" button outside the loop -->
+<div class="add-control">
+    <a href="{% url 'add_employee' %}">Add Employee</a>
+</div>
+
+<!-- Loop through employees -->
+{% for employee in employees %}
+    <style>
+    .employee p {
+        margin: 0.2em 0; /* Adjusts both top and bottom margins. Adjust the 0.5em value to your liking. */
+    }
+    .employee {
+        margin-bottom: 2em; /* Adjust this value to your desired spacing */
+    }
+    .employee > :first-child {
+        margin-top: 2em; /* Adjust this value to your desired spacing */
+    }
+    </style>
+
+    <div class="employee">
+        <!-- Display employee details (ID, name, image, etc.) here -->
+        <img src="{{ employee.image.url }}" alt="{{ employee.name }}" width="100">
+        <p>Employee ID: {{ employee.employee_id }}</p>
+        <p>Name: {{ employee.name }}</p>
+        <p>Description: {{ employee.description }}</p>
+        
+        <!-- Controls for each employee -->
+        <div class="employee-controls">
+            <a href="{% url 'edit_employee' employee.id %}">Edit</a>
+            <a href="{% url 'delete_employee' employee.id %}">Delete</a>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <style>
+    body {
+      background-image: url('{% static "employee_dir/background.jpg" %}');
+      background-size: cover; /* Optional: You might want to cover the entire viewport */
+      background-repeat: no-repeat; /* Optional: Prevents repeating the image if it's too small for the container */
+    }
+    </style>    
+    <h2 style="text-align: center;">Making The World A Better Place</h2>
+{% endblock %}
