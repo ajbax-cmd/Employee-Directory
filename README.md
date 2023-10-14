@@ -20,16 +20,18 @@ This project is a simple Employee Directory developed using Django. It allows us
 7. Visit `http://127.0.0.1:8000/` in your browser to access the application.
 
 ## Usage
-- On the homepage, you'll see a list of all employees.
+- On the Employee Directory page, you'll see a list of all employees.
 - You can use the 'Add Employee' button to navigate to the form for adding a new employee.
 - Click on 'Edit' next to any employee to modify their details.
+- Click on 'Delete' next to any employee to remove them form the directory.
 - Use the search bar to find employees by name or ID.
+- Use the sort drop down to sort employees by name or ID.
 
 ## Directory Structure
--employee_dir: Main application directory containing models, views, templates, and static/media files.
--project2: Main project configuration directory.
--media: Directory for storing uploaded images.
--static: Directory for static files like stylesheets, scripts, and other assets.
+- employee_dir: Main application directory containing models, views, templates, and static/media files.
+- project2: Main project configuration directory.
+- media: Directory for storing uploaded images.
+- static: Directory for static files like stylesheets, scripts, and other assets.
 
 
 ## Disclaimer
