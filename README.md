@@ -13,7 +13,7 @@ This project is a simple Employee Directory developed using Django. It allows us
 ## Installation and Setup
 1. Clone the repository or download the project to your local machine.
 2. Navigate to the project's root directory in your terminal.
-3. Run `pip install -r requirements.txt` to install the necessary dependencies.
+3. Install dependencies -> `pip install django', 'pip install Pillow'
 4. Make sure to set up your database configurations in `settings.py`.
 5. Run `python manage.py migrate` to apply migrations.
 6. Start the development server with `python manage.py runserver`.
